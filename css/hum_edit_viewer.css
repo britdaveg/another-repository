@@ -242,6 +242,25 @@ div.CodeMirror-cursors {
 @media print {
   .CodeMirror div.CodeMirror-cursors {
     visibility: hidden; } }
+.treegrid-indent {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative; }
+
+.treegrid-expander {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
+
+.treegrid-expander-expanded {
+  background-image: url(../img/collapse.png); }
+
+.treegrid-expander-collapsed {
+  background-image: url(../img/expand.png); }
+
 .twitter-typeahead .tt-query, .twitter-typeahead .tt-hint {
   margin-bottom: 0;
   background-color: white !important; }
@@ -349,6 +368,58 @@ div.CodeMirror-cursors {
 .annotation-popover .delete-button {
   margin-left: 10px;
   float: right; }
+
+.annotation-popover .catalog-buttons {
+  padding-top: 3px;
+  float: right; }
+
+#catalog-search-dialog {
+  z-index: 99999; }
+
+#catalog-search-dialog .dialog {
+  width: 45%; }
+
+#catalog-search-dialog .search-group {
+  padding: 5px 5px; }
+
+#catalog-search-dialog .browse-panel {
+  width: 30%; }
+
+#catalog-search-dialog .browse-panel .list-group-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 12px; }
+
+#catalog-search-dialog .browse-panel .icon {
+  font-size: 10px; }
+
+#catalog-search-dialog .results-panel {
+  width: 65%;
+  height: 490px !important; }
+
+#catalog-search-dialog .image-glyph {
+  font-size: 4em; }
+
+#catalog-search-dialog .thinner {
+  padding: 5px; }
+
+#catalog-search-dialog .modal-footer {
+  clear: both; }
+
+#catalog-search-dialog .scrollable {
+  overflow-y: scroll; }
+
+#catalog-search-dialog .wait-spinner {
+  position: absolute;
+  z-index: 9;
+  margin-top: 260px;
+  margin-left: 370px; }
+
+#catalog-search-dialog .tag_name td {
+  text-decoration: underline;
+  color: #0000EE;
+  cursor: pointer;
+  cursor: hand; }
 
 #image-upload-form {
   display: none; }
@@ -915,6 +986,32 @@ body {
 
 #xml-filter-dialog .tag-row {
   padding-bottom: 4px; }
+
+#catalog-display-dialog {
+  z-index: 99999; }
+
+#catalog-display-dialog .model-title {
+  padding-top: 5px;
+  font-weight: bold; }
+
+#catalog-display-dialog .modal-body {
+  height: 490px !important; }
+
+#catalog-display-dialog .done-button {
+  float: right;
+  margin-bottom: 10px; }
+
+#catalog-display-dialog .thinner {
+  padding: 5px; }
+
+#catalog-display-dialog .scrollable {
+  overflow-y: scroll; }
+
+.catalog-popup {
+  text-decoration: underline;
+  color: #0000EE;
+  cursor: pointer;
+  cursor: hand; }
 
 #hum-edit-published {
   margin-top: 20px; }
