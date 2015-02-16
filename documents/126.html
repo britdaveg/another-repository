@@ -113,25 +113,23 @@
    </div>
 </div>
 
-                 <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
-    <div id="table-of-contents" class="table-of-contents page col-xs-6 col-sm-6 col-md-6 col-lg-6">
+               <div id="table-of-contents" class="table-of-contents reading-page">
       <div class="title">Table Of Contents</div>
       <ul class="">
-            <li><a href="#the_first_heading" class="anchor"><span class="item">the first heading</span><span class="pull-right leaders">...................................................................................</span></a>
-            <li><a href="#the_second_heading" class="anchor"><span class="item">the second heading</span><span class="pull-right leaders">..................................................................................</span></a>
-            <li><a href="#the_third_heading" class="anchor"><span class="item">the third heading</span><span class="pull-right leaders">...................................................................................</span></a>
-            <li><a href="#the_forth_heading" class="anchor"><span class="item">the forth heading</span><span class="pull-right leaders">...................................................................................</span></a>
-            <li><a href="#the_fifth_heading" class="anchor"><span class="item">the fifth heading</span><span class="pull-right leaders">...................................................................................</span></a>
+            <li><a href="#the_first_heading" class="anchor"><span class="item">the first heading</span><span class="pull-right leaders">...................................................................................................................................................................</span></a>
+            <li><a href="#the_second_heading" class="anchor"><span class="item">the second heading</span><span class="pull-right leaders">..................................................................................................................................................................</span></a>
+            <li><a href="#the_third_heading" class="anchor"><span class="item">the third heading</span><span class="pull-right leaders">...................................................................................................................................................................</span></a>
+            <li><a href="#the_forth_heading" class="anchor"><span class="item">the forth heading</span><span class="pull-right leaders">...................................................................................................................................................................</span></a>
+            <li><a href="#the_fifth_heading" class="anchor"><span class="item">the fifth heading</span><span class="pull-right leaders">...................................................................................................................................................................</span></a>
       </ul>
    </div>
 
-                 <div id="page-3473" class="sbs-page">
-      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <div class="dragon" id="page-image-250"
-                 data-tile-source-url="/b/openseadragon/250.json"></div>
+            <div id="reading-text" class="reading-text">
+  <div class="reading-page">
+      <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img alt="Page 1" class="thumb-image" id="thumb-1" src="https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datafa4bd70a-53e6-4937-b148-d61a1fe6dde51_ARTSTOR_103_41822000859072-2.jpg" />
       </div>
-      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="1">
-        <div class="diplomatic"><div class='line'></div>
+      <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="section-1"><div class='line'></div>
 <div class='line'>qweqweqwe</div>
 <div class='line'></div>
 <div class='line'></div>
@@ -141,31 +139,40 @@
 <div class='line'></div>
 <div class='line'></div>
 </div>
+      <div class="reading-pagebreak">&nbsp;</div>
+      <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3">
+           <span class="thumb-image glyphicon glyphicon-picture thumb-placeholder" id="thumb-2" aria-hidden="true"></span>
       </div>
-      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
-    </div>
-    <div id="page-3788" class="sbs-page">
-      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      </div>
-      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="2">
-        <div class="diplomatic"><div class='line'>zxczxczxc</div>
+      <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="section-2"><div class='line'>zxczxczxc</div>
 <div class='line'>zxczxczxc</div>
 <div class='line'>zxczxczxc</div>
 </div>
+      <div class="reading-pagebreak">&nbsp;</div>
+      <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3">
+           <span class="thumb-image glyphicon glyphicon-picture thumb-placeholder" id="thumb-3" aria-hidden="true"></span>
       </div>
-      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
-    </div>
-    <div id="page-3790" class="sbs-page">
-      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      </div>
-      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="3">
-        <div class="diplomatic"><div class='line'>asdasdasdasd</div>
+      <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="section-3"><div class='line'>asdasdasdasd</div>
 <div class='line'>asdasdasd</div>
 <div class='line'>asdasdasd</div>
 </div>
-      </div>
-      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
-    </div>
+      <div class="reading-pagebreak">&nbsp;</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+    // hoverover functionality...
+    $(document).ready( function( ) {
+        $( ".thumb-image" ).hover(function( ) {
+            var textdiv_id = $( this).attr( "id").replace( "thumb", "section" );
+            $( '#' + textdiv_id ).addClass( "reading-highlight");
+        }, function( ) {
+            var textdiv_id = $( this).attr( "id").replace( "thumb", "section" );
+            $( '#' + textdiv_id ).removeClass( "reading-highlight" );
+        });
+    });
+
+</script>
 
 
       </div>
