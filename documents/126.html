@@ -200,6 +200,13 @@
             var aid = $( this).attr( "id").replace( "thumb-", "" );
             $( ".reading-div span[data-annotation-id='" + aid + "']" ).removeClass( "reading-highlight");
         });
+
+        // thumbnail click handler
+        $( ".thumb-image" ).click( function( ) {
+            var aid = $( this).attr( "id").replace( "thumb-", "" );
+            alert( "Clicked " + aid );
+        });
+
     });
 
     function thumb_html( id, url ) {
