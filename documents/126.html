@@ -203,8 +203,7 @@
 
         // thumbnail click handler
         $( ".thumb-image" ).click( function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            alert( "Clicked " + aid );
+            thumbnail_clicked( $( this ) );
         });
 
     });
