@@ -158,7 +158,8 @@
 
         // thumbnail click handler
         $( ".thumb-image" ).click( function( ) {
-            thumbnail_clicked( $( this ) );
+            var guid = $( this).attr( "guid" );
+            thumbnail_clicked( guid );
         });
 
     });
