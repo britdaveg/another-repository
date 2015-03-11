@@ -167,10 +167,12 @@
             $( ".reading-div span[data-annotation-id='" + aid + "']" ).removeClass( "reading-highlight");
         });
 
-        // thumbnail click handler
+        // thumbnail click handler; call if the handler is defined, ignore otherwise.
         $( ".thumb-image" ).click( function( ) {
-            var guid = $( this).attr( "guid" );
-            thumbnail_clicked( guid );
+            if( typeof thumbnail_clicked === "function" ) {
+                var guid = $(this).attr("guid");
+                thumbnail_clicked(guid);
+            }
         });
 
     });

@@ -160,6 +160,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       Please Wait...
    </p>
 </div>
+<script type="text/javascript">
+   $(document).ready( function( ) {
+       // diff click handler; call if the handler is defined, ignore otherwise.
+       $( ".diff" ).click( function( ) {
+           if( typeof diff_clicked === "function" ) {
+               var uuid = $(this).attr("uuid");
+               diff_clicked( uuid );
+           }
+       });
+
+   });
+</script>
 
          </div>
       </div>
