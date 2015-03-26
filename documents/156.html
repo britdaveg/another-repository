@@ -117,11 +117,12 @@
 
             
             <div id="reading-text" class="reading-text">
-      <div class="reading-page">
+      <div id="page-4191" class="reading-page">
 
 
         <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="page-1"><span data-annotation-id='4194' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4196' class='annotation '>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4197' class='annotation '>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4198' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></div>
+        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="page-1"><span data-annotation-id='4194' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4196' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4197' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4198' class='annotation humedit-pb'>new-doc-1<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></div>
+        <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
 
       </div>
 </div>
@@ -132,31 +133,42 @@
 
         // get the information for all our images...
 
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:4194,&quot;guid&quot;:&quot;e27886a8-9dc1-4907-9b1c-f8480b4ef7dd&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datae27886a8-9dc1-4907-9b1c-f8480b4ef7dd35_ARTSTOR_103_41822003774757-2.jpg&quot;},{&quot;aid&quot;:4196,&quot;guid&quot;:&quot;b08d6daf-2f4d-4b2d-be64-3fee665b8fef&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datab08d6daf-2f4d-4b2d-be64-3fee665b8fef40_ARTSTOR_103_41822001697869-2.jpg&quot;},{&quot;aid&quot;:4197,&quot;guid&quot;:&quot;d947532b-a274-46bc-bed8-f465ff268758&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datad947532b-a274-46bc-bed8-f465ff26875860_ARTSTOR_103_41822000843159-2.jpg&quot;},{&quot;aid&quot;:4198,&quot;guid&quot;:&quot;7e5114af-d11e-477c-be36-2dc31d5da03a&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data7e5114af-d11e-477c-be36-2dc31d5da03a90_BARTSCH_2250090-1.jpg&quot;}]}'.replace( /&quot;/g, "\"" ) );
+        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:4198,&quot;guid&quot;:&quot;7e5114af-d11e-477c-be36-2dc31d5da03a&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data7e5114af-d11e-477c-be36-2dc31d5da03a90_BARTSCH_2250090-1.jpg&quot;},{&quot;aid&quot;:4197,&quot;guid&quot;:&quot;d947532b-a274-46bc-bed8-f465ff268758&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datad947532b-a274-46bc-bed8-f465ff26875860_ARTSTOR_103_41822000843159-2.jpg&quot;},{&quot;aid&quot;:4196,&quot;guid&quot;:&quot;b08d6daf-2f4d-4b2d-be64-3fee665b8fef&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datab08d6daf-2f4d-4b2d-be64-3fee665b8fef40_ARTSTOR_103_41822001697869-2.jpg&quot;},{&quot;aid&quot;:4194,&quot;guid&quot;:&quot;e27886a8-9dc1-4907-9b1c-f8480b4ef7dd&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datae27886a8-9dc1-4907-9b1c-f8480b4ef7dd35_ARTSTOR_103_41822003774757-2.jpg&quot;}]}'.replace( /&quot;/g, "\"" ) );
 
         // manually add the images to the page once it is loaded
         $.each( images, function( page, images ) {
            $.each( images, function( index, value ) {
-               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id='" + value['aid'] + "']") );
+               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id='" + value['aid'] + "']").filter( ":first" ) );
             });
         });
 
+        // add a break after each 'page' of content
+        //$( '<br/><br/>').insertAfter( ".humedit-pb" );
+
         // ensure that the images don't overlap
         var baseline = 0;
-        var image_count = 0;
+        var xoffset = 0;
+        var offset = null;
         $( ".thumb-image" ).each( function( index ) {
-            image_count += 1;
-            var offset = $( this ).offset( );
-            if( index === 0 ) baseline = offset.top;
-            var expected_pos = ( index * 110 ) + baseline;
-            if( offset.top < expected_pos ) {
-                offset.top = expected_pos;
-                $( this ).offset( offset );
+            offset = $(this).offset();
+            if (index === 0) {
+                baseline = offset.top;
+                xoffset = offset.left;
             }
+
+            var expected_top = ( index * 110 ) + baseline;
+
+            if( offset.top < expected_top ) {
+                offset.top = expected_top;
+            }
+            offset.left = xoffset;
+            $( this ).offset( offset );
         });
 
-        // set the minimum page height in case we have moved stuff around; assume 110 pels height for each imager plus 100 pels for margin top and bottom
-        $( ".reading-page").css( "min-height", ( image_count * 110 ) + 100 );
+        // set the minimum page height in case we have moved stuff around...
+        if( offset !== null ) {
+            $( ".reading-page" ).css( "min-height", offset.top );
+        }
 
         // hover over functionality...
         $( ".thumb-image" ).hover(function( ) {
